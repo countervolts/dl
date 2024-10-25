@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-container">
+            <h1>Download Setup</h1>
+            <div id="file-info" class="file-info">
+                <div class="info-box">
+                    <p><span class="label">File Name:</span> <span id="file-name">setup.exe</span></p>
+                    <p><span class="label">SHA256:</span> <span id="sha256"></span></p>
+                    <p><span class="label">MD5:</span> <span id="md5"></span></p>
+                    <p><span class="label">CRC32:</span> <span id="crc32"></span></p>
+                    <p><span class="label">Timestamp:</span> <span id="timestamp"></span></p>
+                    <p><span class="label">Size:</span> <span id="size"></span></p>
+                </div>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree-checkbox">
+                <label for="agree-checkbox">I agree to the <a href="terms/terms.txt" target="_blank">terms</a></label>
+            </div>
+            <button id="download-button" disabled>Download</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>website created by ayo :)</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
