@@ -9,11 +9,11 @@ document.getElementById('agree-checkbox').addEventListener('change', function() 
 });
 
 document.getElementById('download-button').addEventListener('click', function() {
-    window.location.href = 'files/setupv.0.0.5.exe';
+    window.location.href = 'files/setupv0.0.5.exe';
 });
 
 async function getFileInfo() {
-    const response = await fetch('files/setupv.0.0.5.exe');
+    const response = await fetch('files/setupv0.0.5.exe');
     const buffer = await response.arrayBuffer();
     const file = new Uint8Array(buffer);
 
